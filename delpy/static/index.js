@@ -77,6 +77,8 @@ define(function(require) {
 		Blockly.Msg["LOGIC_BOOLEAN_TRUE"] = "verdadeiro";
 		Blockly.Msg["CONTROLS_IF_DO"] = "";
 		Blockly.Msg["MATH_RANDOM_FLOAT_TITLE_RANDOM"] = "número aleatório entre 0.0 e 1.0";
+		Blockly.Msg["MATH_ONLIST_OPERATOR_SUM"] = "somatório da lista";
+		Blockly.Msg["CATMATH"] = "Números";
 	  }
       delpy_blockly.inject_blockly(true);
     });
