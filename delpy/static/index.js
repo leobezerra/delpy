@@ -67,6 +67,17 @@ define(function(require) {
         Blockly.Msg[msg_key.toUpperCase()] = CodeMsg[msg_key];
       }
 	  Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"] = "";
+	  if (lang_key == "pt-br") {
+		Blockly.Msg["CONTROLS_FOR_TITLE"] = "contar com %1 de %2 até %3 com passo %4";
+		Blockly.Msg["CONTROLS_WHILEUNTIL_OPERATOR_UNTIL"] = "repita até que";
+		Blockly.Msg["CONTROLS_WHILEUNTIL_OPERATOR_WHILE"] = "repita enquanto";
+		Blockly.Msg["LOGIC_OPERATION_AND"] = "e";
+		Blockly.Msg["LOGIC_OPERATION_OR"] = "ou";
+		Blockly.Msg["LOGIC_BOOLEAN_FALSE"] = "falso";
+		Blockly.Msg["LOGIC_BOOLEAN_TRUE"] = "verdadeiro";
+		Blockly.Msg["CONTROLS_IF_DO"] = "";
+		Blockly.Msg["MATH_RANDOM_FLOAT_TITLE_RANDOM"] = "número aleatório entre 0.0 e 1.0";
+	  }
       delpy_blockly.inject_blockly(true);
     });
   }
