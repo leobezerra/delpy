@@ -81,7 +81,10 @@ define(function(require) {
 		Blockly.Msg["CATMATH"] = "Números";
 		Blockly.Msg["CATTEXT"] = "Textos";
 		Blockly.Msg["TEXT_JOIN_TITLE_CREATEWITH"] = "criar texto unindo";
-		Blockly.Msg["TEXT_APPEND_TITLE"] = "anexar texto %2 a %1";
+		Blockly.Msg["TEXT_APPEND_TITLE"] = "anexar %2 a %1";
+		Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "encontre a primeira ocorrência do texto";
+		Blockly.Msg["TEXT_INDEXOF_OPERATOR_LAST"] = "encontre a última ocorrência do texto";
+		Blockly.Msg["TEXT_INDEXOF_TITLE"] = "%2 %3 em %1";
 	  }
       delpy_blockly.inject_blockly(true);
     });
