@@ -68,6 +68,8 @@ define(function(require) {
       }
       delpy_blockly.inject_blockly(true);
     });
+	Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"] = "";
+    delpy_blockly.inject_blockly(true);
   }
 
   function init_menu() {
