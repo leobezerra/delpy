@@ -99,6 +99,13 @@
   </category>
   <category name="%{BKY_CATTEXT}" colour="%{BKY_TEXTS_HUE}">
     <block type="text"></block>
+    <block type="text_print">
+      <value name="TEXT">
+        <shadow type="text">
+          <field name="TEXT">abc</field>
+        </shadow>
+      </value>
+    </block>
     <block type="text_join"></block>
     <block type="text_append">
       <value name="TEXT">
@@ -132,20 +139,6 @@
       </value>
     </block>
     <block type="text_changeCase">
-      <value name="TEXT">
-        <shadow type="text">
-          <field name="TEXT">abc</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="text_trim">
-      <value name="TEXT">
-        <shadow type="text">
-          <field name="TEXT">abc</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="text_print">
       <value name="TEXT">
         <shadow type="text">
           <field name="TEXT">abc</field>

@@ -67,6 +67,7 @@ define(function(require) {
         Blockly.Msg[msg_key.toUpperCase()] = CodeMsg[msg_key];
       }
 	  Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"] = "";
+	  Blockly.Msg["CONTROLS_IF_MSG_THEN"] = "";
 	  if (lang_key == "pt-br") {
 		Blockly.Msg["CONTROLS_FOR_TITLE"] = "contar com %1 de %2 até %3 com passo %4";
 		Blockly.Msg["CONTROLS_WHILEUNTIL_OPERATOR_UNTIL"] = "repita até que";
@@ -89,9 +90,12 @@ define(function(require) {
 		Blockly.Msg["TEXT_GET_SUBSTRING_END_FROM_START"] = "até a letra nº (contando do início)";
 		Blockly.Msg["TEXT_GET_SUBSTRING_END_LAST"] = "até a última letra";
 		Blockly.Msg["TEXT_GET_SUBSTRING_INPUT_IN_TEXT"] = "obter trecho de";
-		Blockly.Msg["TEXT_GET_SUBSTRING_START_FIRST"] = ", da primeira letra";
-		Blockly.Msg["TEXT_GET_SUBSTRING_START_FROM_END"] = ", da letra nº (contando do final)";
-		Blockly.Msg["TEXT_GET_SUBSTRING_START_FROM_START"] = ", da letra nº (contando do início)";
+		Blockly.Msg["TEXT_GET_SUBSTRING_START_FIRST"] = "da primeira letra";
+		Blockly.Msg["TEXT_GET_SUBSTRING_START_FROM_END"] = "da letra nº (contando do final)";
+		Blockly.Msg["TEXT_GET_SUBSTRING_START_FROM_START"] = "da letra nº (contando do início)";
+		Blockly.Msg["TEXT_CHANGECASE_OPERATOR_LOWERCASE"] = "copiar em letras minúsculas";
+		Blockly.Msg["TEXT_CHANGECASE_OPERATOR_TITLECASE"] = "copiar como Nomes Próprios";
+		Blockly.Msg["TEXT_CHANGECASE_OPERATOR_UPPERCASE"] = "copiar em letras MAIÚSCULAS";
 	  }
       delpy_blockly.inject_blockly(true);
     });
