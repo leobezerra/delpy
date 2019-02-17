@@ -182,16 +182,17 @@ define(function(require) {
       }
     },
     generate_python_code: function() {
-      var code = Blockly.Python.workspaceToCode(this.workspace);
-      var prepare = [
-        "from delpy import Delpy",
-        "",
-        "",
-        "self = Delpy.get(" + this.delpy_id + ")",
-        "",
-        "",
-      ];
-      return prepare.join("\n") + code;
+      return Blockly.Python.workspaceToCode(this.workspace);
+      // var code = Blockly.Python.workspaceToCode(this.workspace);
+      // var prepare = [
+      //   "from delpy import Delpy",
+      //   "",
+      //   "",
+      //   "self = Delpy.get(" + this.delpy_id + ")",
+      //   "",
+      //   "",
+      // ];
+      // return prepare.join("\n") + code;
     }
   };
 
