@@ -152,7 +152,7 @@ define(function(require) {
     this.output_area = new outputarea.OutputArea({
       selector: output_area_holder,
       config: {data: {OutputArea: {}}},
-      prompt_area: false,
+      prompt_area: true,
       events: Jupyter.notebook.events,
       keyboard_manager: Jupyter.notebook.keyboard_manager
     });
