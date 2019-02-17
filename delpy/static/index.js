@@ -79,6 +79,9 @@ define(function(require) {
 		Blockly.Msg["MATH_RANDOM_FLOAT_TITLE_RANDOM"] = "número aleatório entre 0.0 e 1.0";
 		Blockly.Msg["MATH_ONLIST_OPERATOR_SUM"] = "somatório da lista";
 		Blockly.Msg["CATMATH"] = "Números";
+		Blockly.Msg["CATMATH"] = "Textos";
+		Blockly.Msg["TEXT_JOIN_TITLE_CREATEWITH"] = "criar texto unindo";
+		Blockly.Msg["TEXT_APPEND_TITLE"] = "anexar texto %2 a %1";
 	  }
       delpy_blockly.inject_blockly(true);
     });
