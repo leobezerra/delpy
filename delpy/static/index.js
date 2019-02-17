@@ -66,10 +66,9 @@ define(function(require) {
       for(var msg_key in CodeMsg) {
         Blockly.Msg[msg_key.toUpperCase()] = CodeMsg[msg_key];
       }
+	  Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"] = "";
       delpy_blockly.inject_blockly(true);
     });
-	Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"] = "";
-    delpy_blockly.inject_blockly(true);
   }
 
   function init_menu() {
