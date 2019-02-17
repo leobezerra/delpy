@@ -82,9 +82,16 @@ define(function(require) {
 		Blockly.Msg["CATTEXT"] = "Textos";
 		Blockly.Msg["TEXT_JOIN_TITLE_CREATEWITH"] = "criar texto unindo";
 		Blockly.Msg["TEXT_APPEND_TITLE"] = "anexar %2 a %1";
-		Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "encontre a primeira ocorrência do texto";
-		Blockly.Msg["TEXT_INDEXOF_OPERATOR_LAST"] = "encontre a última ocorrência do texto";
+		Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "encontre a primeira ocorrência de";
+		Blockly.Msg["TEXT_INDEXOF_OPERATOR_LAST"] = "encontre a última ocorrência de";
 		Blockly.Msg["TEXT_INDEXOF_TITLE"] = "%2 %3 em %1";
+		Blockly.Msg["TEXT_GET_SUBSTRING_END_FROM_END"] = "até a letra nº (contando do final)";
+		Blockly.Msg["TEXT_GET_SUBSTRING_END_FROM_START"] = "até a letra nº (contando do início)";
+		Blockly.Msg["TEXT_GET_SUBSTRING_END_LAST"] = "até a última letra";
+		Blockly.Msg["TEXT_GET_SUBSTRING_INPUT_IN_TEXT"] = "obter trecho de";
+		Blockly.Msg["TEXT_GET_SUBSTRING_START_FIRST"] = ", da primeira letra";
+		Blockly.Msg["TEXT_GET_SUBSTRING_START_FROM_END"] = ", da letra nº (contando do final)";
+		Blockly.Msg["TEXT_GET_SUBSTRING_START_FROM_START"] = ", da letra nº (contando do início)";
 	  }
       delpy_blockly.inject_blockly(true);
     });
