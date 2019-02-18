@@ -103,13 +103,15 @@ define(function(require) {
 		Blockly.Msg["PROCEDURES_CALLNORETURN_TOOLTIP"] = "Executa o procedimento definido pelo usuário \"%1\".";
 		Blockly.Msg["PROCEDURES_CALLRETURN_TOOLTIP"] = "Executa o procedimento definido pelo usuário \"%1\" e usa seu retorno.";
 		Blockly.Msg["PROCEDURES_CALL_BEFORE_PARAMS"] = "entradas:";
+		Blockly.Msg["PROCEDURES_DEFNORETURN_PROCEDURE"] = "nome";
 		Blockly.Msg["PROCEDURES_DEFNORETURN_TITLE"] = "procedimento";
 		Blockly.Msg["PROCEDURES_DEFRETURN_TOOLTIP"] = "Cria um procedimento que retorna um valor.";
 		Blockly.Msg["PROCEDURES_DEF_DUPLICATE_WARNING"] = "Atenção: Esta função tem entradas de mesmo nome.";
 		Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Atenção: Este bloco só pode ser utilizado dentro da definição de um procedimento.";
 		Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Adiciona uma entrada para este procedimento";
 		Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Adiciona, remove, ou reordena as entradas para este procedimento.";
-		
+		Blockly.Msg["PROCEDURES_DEFRETURN_TITLE"] = Blockly.Msg["PROCEDURES_DEFNORETURN_TITLE"];
+		Blockly.Msg["PROCEDURES_DEFRETURN_PROCEDURE"] = Blockly.Msg["PROCEDURES_DEFNORETURN_PROCEDURE"];
 	  }
       delpy_blockly.inject_blockly(true);
     });
