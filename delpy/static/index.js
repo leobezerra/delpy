@@ -96,6 +96,7 @@ define(function(require) {
 		Blockly.Msg["TEXT_CHANGECASE_OPERATOR_LOWERCASE"] = "copiar em letras minúsculas";
 		Blockly.Msg["TEXT_CHANGECASE_OPERATOR_TITLECASE"] = "copiar como Nomes Próprios";
 		Blockly.Msg["TEXT_CHANGECASE_OPERATOR_UPPERCASE"] = "copiar em letras MAIÚSCULAS";
+		Blockly.Msg["VARIABLES_SET"] = "associar %1 a %2";
 	  }
       delpy_blockly.inject_blockly(true);
     });

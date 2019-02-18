@@ -19,6 +19,7 @@
         </shadow>
       </value>
     </block>
+    <block type="lists_isEmpty"></block>
   </category>
   <category name="%{BKY_CATLOOPS}" colour="%{BKY_LOOPS_HUE}">
     <block type="controls_repeat_ext">
@@ -159,7 +160,6 @@
       </value>
     </block>
     <block type="lists_length"></block>
-    <block type="lists_isEmpty"></block>
     <block type="lists_indexOf">
       <value name="VALUE">
         <block type="variables_get">

@@ -101,12 +101,12 @@ define(function(require) {
     $elem.find('.delpy-btns').remove();
     var $btns = $('<div/>').addClass('delpy-btns').appendTo($elem)
     // Prepare phereperal widgets
-    $('<button/>').text("Generate Python Code")
-      .addClass('btn').appendTo($btns)
-      .click(function() {
-        var cell_ = Jupyter.notebook.insert_cell_below('code');
-        cell_.set_text(thisDelpy.generate_python_code());
-      });
+    // $('<button/>').text("Generate Python Code")
+    //   .addClass('btn').appendTo($btns)
+    //   .click(function() {
+    //     var cell_ = Jupyter.notebook.insert_cell_below('code');
+    //     cell_.set_text(thisDelpy.generate_python_code());
+    //   });
 
     $('<button/>').text("Save")
       .addClass('btn').appendTo($btns)
