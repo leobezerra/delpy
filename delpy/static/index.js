@@ -69,6 +69,9 @@ define(function(require) {
 	  Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"] = "";
 	  Blockly.Msg["CONTROLS_IF_MSG_THEN"] = "";
 	  if (lang_key == "pt-br") {
+  		Blockly.Msg["CATMATH"] = "Números";
+  		Blockly.Msg["CATTEXT"] = "Textos";
+  		Blockly.Msg["CATFUNCTIONS"] = "Procedimentos";
 		Blockly.Msg["CONTROLS_FOR_TITLE"] = "contar com %1 de %2 até %3 com passo %4";
 		Blockly.Msg["CONTROLS_WHILEUNTIL_OPERATOR_UNTIL"] = "repita até que";
 		Blockly.Msg["CONTROLS_WHILEUNTIL_OPERATOR_WHILE"] = "repita enquanto";
@@ -79,8 +82,6 @@ define(function(require) {
 		Blockly.Msg["CONTROLS_IF_DO"] = "";
 		Blockly.Msg["MATH_RANDOM_FLOAT_TITLE_RANDOM"] = "número aleatório entre 0.0 e 1.0";
 		Blockly.Msg["MATH_ONLIST_OPERATOR_SUM"] = "somatório da lista";
-		Blockly.Msg["CATMATH"] = "Números";
-		Blockly.Msg["CATTEXT"] = "Textos";
 		Blockly.Msg["TEXT_JOIN_TITLE_CREATEWITH"] = "criar texto unindo";
 		Blockly.Msg["TEXT_APPEND_TITLE"] = "anexar %2 a %1";
 		Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "encontre a primeira ocorrência de";
@@ -97,6 +98,18 @@ define(function(require) {
 		Blockly.Msg["TEXT_CHANGECASE_OPERATOR_TITLECASE"] = "copiar como Nomes Próprios";
 		Blockly.Msg["TEXT_CHANGECASE_OPERATOR_UPPERCASE"] = "copiar em letras MAIÚSCULAS";
 		Blockly.Msg["VARIABLES_SET"] = "associar %1 a %2";
+		Blockly.Msg["MATH_CHANGE_TITLE"] = "alterar %1 acrescentando %2";
+		Blockly.Msg["PROCEDURES_BEFORE_PARAMS"] = "entradas:";
+		Blockly.Msg["PROCEDURES_CALLNORETURN_TOOLTIP"] = "Executa o procedimento definido pelo usuário \"%1\".";
+		Blockly.Msg["PROCEDURES_CALLRETURN_TOOLTIP"] = "Executa o procedimento definido pelo usuário \"%1\" e usa seu retorno.";
+		Blockly.Msg["PROCEDURES_CALL_BEFORE_PARAMS"] = "entradas:";
+		Blockly.Msg["PROCEDURES_DEFNORETURN_TITLE"] = "procedimento";
+		Blockly.Msg["PROCEDURES_DEFRETURN_TOOLTIP"] = "Cria um procedimento que retorna um valor.";
+		Blockly.Msg["PROCEDURES_DEF_DUPLICATE_WARNING"] = "Atenção: Esta função tem entradas de mesmo nome.";
+		Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Atenção: Este bloco só pode ser utilizado dentro da definição de um procedimento.";
+		Blockly.Msg["PROCEDURES_MUTATORARG_TOOLTIP"] = "Adiciona uma entrada para este procedimento";
+		Blockly.Msg["PROCEDURES_MUTATORCONTAINER_TOOLTIP"] = "Adiciona, remove, ou reordena as entradas para este procedimento.";
+		
 	  }
       delpy_blockly.inject_blockly(true);
     });
