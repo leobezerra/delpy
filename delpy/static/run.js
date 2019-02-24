@@ -15,7 +15,7 @@ define(function(require) {
         }));
 		
 	  var wrapper = function(text) {
-		  return prompt(text);
+		  return prompt_user(text);
 	  };
       interpreter.setProperty(scope, 'prompt',
 	    interpreter.createNativeFunction(wrapper));
@@ -43,6 +43,10 @@ define(function(require) {
     function print(text) {
       delpy.output_area.append_output({output_type: "stream", text: text + "\n", name: "output"});
     }
+	
+	function prompt_user(text) {
+	  delpy.output_area.append_raw_input(text)
+	}
 
     var busy_func = null;
 
