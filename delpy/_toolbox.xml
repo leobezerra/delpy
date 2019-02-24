@@ -99,6 +99,13 @@
     <block type="math_random_float"></block>
   </category>
   <category name="%{BKY_CATTEXT}" colour="%{BKY_TEXTS_HUE}">
+	<block type="text_prompt_ext">
+	<value name="TEXT">
+	  <shadow type="text">
+	    <field name="TEXT">abc</field>
+	  </shadow>
+	</value>
+	</block>
     <block type="text"></block>
     <block type="text_print">
       <value name="TEXT">
@@ -130,13 +137,6 @@
         <shadow type="text">
           <field name="TEXT">abc</field>
         </shadow>
-      </value>
-    </block>
-    <block type="text_getSubstring">
-      <value name="STRING">
-        <block type="variables_get">
-          <field name="VAR">{textVariable}</field>
-        </block>
       </value>
     </block>
     <block type="text_changeCase">

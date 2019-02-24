@@ -13,6 +13,12 @@ define(function(require) {
         interpreter.createNativeFunction(function(text) {
           print(text ? text.toString() : '');
         }));
+		
+	  var wrapper = function(text) {
+		  return prompt(text);
+	  };
+      interpreter.setProperty(scope, 'prompt',
+	    interpreter.createNativeFunction(wrapper));
 
       var wrapper = function(id) {
         id = id ? id.toString() : '';
