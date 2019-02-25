@@ -45,7 +45,7 @@ define(function(require) {
     }
 	
 	function prompt_user(text) {
-	  delpy.output_area.append_raw_input(text)
+	  delpy.output_area.append_raw_input({content: {password: false, prompt: text}})
 	}
 
     var busy_func = null;
