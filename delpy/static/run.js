@@ -61,7 +61,7 @@ define(function(require) {
           console.log('send_input_reply.Kernel', evt)
 		  asyncBusy = false;
           if(busy_func) busy_func(false);
-		  callback(JSON.parse(data)); 
+		  callback(data); 
 	  });
     }
 	
