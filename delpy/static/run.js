@@ -13,13 +13,6 @@ define(function(require) {
         interpreter.createNativeFunction(function(text) {
           print(text ? text.toString() : '');
         }));
-		
-		// 	  var wrapper = function(text, callback) {
-		// 	    delpy.output_area.append_raw_input({content: {password: false, prompt: text + " "}});
-		// delpy.output_area.events.on('send_input_reply.Kernel', function(evt, data) { callback(data); });
-		//       };
-		//       interpreter.setProperty(scope, 'prompt',
-		//         interpreter.createAsyncFunction(wrapper));
 
       var wrapper = function(id) {
         id = id ? id.toString() : '';
