@@ -15,7 +15,8 @@ define(function(require) {
         }));
 		
 	  var wrapper = function(text) {
-		  return prompt_user(text);
+		  prompt_user(text);
+		  return "Júlia";
 	  };
       interpreter.setProperty(scope, 'prompt',
 	    interpreter.createNativeFunction(wrapper));
@@ -45,7 +46,7 @@ define(function(require) {
     }
 	
 	function prompt_user(text) {
-	  delpy.output_area.append_raw_input({content: {password: false, prompt: text}})
+	  delpy.output_area.append_raw_input({content: {password: false, prompt: text + " "}})
 	}
 
     var busy_func = null;
