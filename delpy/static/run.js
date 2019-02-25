@@ -14,24 +14,12 @@ define(function(require) {
           print(text ? text.toString() : '');
         }));
 		
-	  //   	  var wrapper = interpreter.createAsyncFunction(function(text, callback) {
-	  //   prompt_user(text ? text.toString() : '', function(ret) {
-	  //     callback(interpreter.createPrimitive(ret));
-	  //   });
-	  // });
-
-	  var wrapper = function(text, callback) {
-	    delpy.output_area.append_raw_input({content: {password: false, prompt: text + " "}});      
-		delpy.output_area.events.on('send_input_reply.Kernel', function(evt, data) { callback(data); });
-      };
-      interpreter.setProperty(scope, 'prompt',
-        interpreter.createAsyncFunction(wrapper));
-		
-	  // var wrapper = function(text) {
-	  // 		  return prompt_user(text);
-	  // };
-	  //       interpreter.setProperty(scope, 'prompt',
-	  //   interpreter.createNativeFunction(wrapper));
+		// 	  var wrapper = function(text, callback) {
+		// 	    delpy.output_area.append_raw_input({content: {password: false, prompt: text + " "}});
+		// delpy.output_area.events.on('send_input_reply.Kernel', function(evt, data) { callback(data); });
+		//       };
+		//       interpreter.setProperty(scope, 'prompt',
+		//         interpreter.createAsyncFunction(wrapper));
 
       var wrapper = function(id) {
         id = id ? id.toString() : '';
@@ -39,6 +27,13 @@ define(function(require) {
       };
       interpreter.setProperty(scope, 'highlightBlock',
         interpreter.createNativeFunction(wrapper));
+
+   	  var wrapper = interpreter.createAsyncFunction(function(text, callback) {
+  	    prompt_user(text ? text.toString() : '', function(ret) {
+  	      callback(interpreter.createPrimitive(ret));
+  	    });
+  	  });
+      interpreter.setProperty(scope, 'prompt', wrapper);
 
       var wrapper = interpreter.createAsyncFunction(function(fn, args, callback) {
         delpy_rpc(fn ? fn.toString() : '', interpreter.pseudoToNative(args), function(ret) {
@@ -58,24 +53,17 @@ define(function(require) {
     }
 
     var busy_func = null;
-			//
-			//     function prompt_user(text, callback) {
-			//       asyncBusy = true;
-			//       comm.on_msg(function(msg) {
-			//         if(msg.content.data.cmd == 'procedure') {
-			//           if(msg.content.data.output) {
-			//             delpy.output_area.append_output(msg.content.data.output);
-			//           }
-			//           if(msg.content.data.ret) {
-			// comm.on_msg(undefined);
-			//             asyncBusy = false;
-			//             if(busy_func) busy_func(false);
-			//             callback(JSON.parse(msg.content.data.ret));
-			//           }
-			//         }
-			//       });
-			//       comm.send({'cmd': 'procedure', 'name': fn, 'args': args, 'id': delpy.delpy_id});
-			//     }
+
+    function prompt_user(text, callback) {
+      asyncBusy = true;
+	  delpy.output_area.append_raw_input({content: {password: false, prompt: text + " "}});
+	  delpy.output_area.events.on('send_input_reply.Kernel', function(evt, data) { 
+          console.log('send_input_reply.Kernel', evt)
+		  asyncBusy = false;
+          if(busy_func) busy_func(false);
+		  callback(JSON.parse(data)); 
+	  });
+    }
 	
     function delpy_rpc(fn, args, callback) {
       asyncBusy = true;
