@@ -80,8 +80,8 @@ define(function(require) {
 		Blockly.Msg["LISTS_GET_INDEX_GET"] = "obtenha";
 		Blockly.Msg["LISTS_GET_INDEX_GET_REMOVE"] = "obtenha e remova";
 		Blockly.Msg["LISTS_GET_INDEX_FIRST"] = "primeira";
-		Blockly.Msg["LISTS_GET_INDEX_FROM_END"] = "";
-		Blockly.Msg["LISTS_GET_INDEX_FROM_START"] = "nº";
+		Blockly.Msg["LISTS_GET_INDEX_FROM_END"] = "nº (contando do fim)";
+		Blockly.Msg["LISTS_GET_INDEX_FROM_START"] = "nº (contando do início)";
 		Blockly.Msg["LISTS_GET_INDEX_INPUT_IN_LIST"] = "da lista";
 		Blockly.Msg["LISTS_GET_INDEX_LAST"] = "última";
 		Blockly.Msg["LISTS_GET_INDEX_RANDOM"] = "aleatória";
@@ -129,6 +129,7 @@ define(function(require) {
 		Blockly.Msg["PROCEDURES_CALL_BEFORE_PARAMS"] = "entradas:";
 		Blockly.Msg["PROCEDURES_DEFNORETURN_PROCEDURE"] = "nome";
 		Blockly.Msg["PROCEDURES_DEFNORETURN_TITLE"] = "procedimento";
+		Blockly.Msg["PROCEDURES_DEFRETURN_RETURN"] = "retorne";
 		Blockly.Msg["PROCEDURES_DEFRETURN_TOOLTIP"] = "Cria um procedimento que retorna um valor.";
 		Blockly.Msg["PROCEDURES_DEF_DUPLICATE_WARNING"] = "Atenção: Esta função tem entradas de mesmo nome.";
 		Blockly.Msg["PROCEDURES_IFRETURN_WARNING"] = "Atenção: Este bloco só pode ser utilizado dentro da definição de um procedimento.";
