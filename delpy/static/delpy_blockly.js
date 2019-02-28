@@ -108,13 +108,13 @@ define(function(require) {
     //     cell_.set_text(thisDelpy.generate_python_code());
     //   });
 
-    $('<button/>').text("Save")
-      .addClass('btn').appendTo($btns)
-      .click(function() {
-        var txt = thisDelpy.get_workspace();
-
-        comm.send({'cmd': 'set_workspace', 'body': txt, 'id': thisDelpy.delpy_id});
-      });
+    // $('<button/>').text("Save")
+    //   .addClass('btn').appendTo($btns)
+    //   .click(function() {
+    //     var txt = thisDelpy.get_workspace();
+    //
+    //     comm.send({'cmd': 'set_workspace', 'body': txt, 'id': thisDelpy.delpy_id});
+    //   });
 
     var runner = new Runner(this);
 
