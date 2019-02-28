@@ -77,12 +77,15 @@ define(function(require) {
 		Blockly.Msg["CONTROLS_WHILEUNTIL_OPERATOR_WHILE"] = "repita enquanto";
 		Blockly.Msg["LISTS_CREATE_EMPTY_TITLE"] = "crie uma lista vazia";
 		Blockly.Msg["LISTS_CREATE_WITH_INPUT_WITH"] = "crie uma lista com";
+		Blockly.Msg["LISTS_GET_INDEX_GET"] = "obtenha";
+		Blockly.Msg["LISTS_GET_INDEX_GET_REMOVE"] = "obtenha e remova";
 		Blockly.Msg["LISTS_GET_INDEX_FIRST"] = "primeira";
 		Blockly.Msg["LISTS_GET_INDEX_FROM_END"] = "";
 		Blockly.Msg["LISTS_GET_INDEX_FROM_START"] = "nº";
 		Blockly.Msg["LISTS_GET_INDEX_INPUT_IN_LIST"] = "da lista";
 		Blockly.Msg["LISTS_GET_INDEX_LAST"] = "última";
 		Blockly.Msg["LISTS_GET_INDEX_RANDOM"] = "aleatória";
+		Blockly.Msg["LISTS_GET_INDEX_REMOVE"] = "remova";
 		Blockly.Msg["LISTS_SET_INDEX_INPUT_TO"] = "o valor";
 		Blockly.Msg["LISTS_SET_INDEX_INSERT"] = "insira na posição";
 		Blockly.Msg["LISTS_SET_INDEX_SET"] = "associe à posição";	
