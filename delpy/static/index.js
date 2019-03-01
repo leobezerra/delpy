@@ -88,7 +88,13 @@ define(function(require) {
 		Blockly.Msg["LISTS_GET_INDEX_REMOVE"] = "remova o elemento da posição";
 		Blockly.Msg["LISTS_SET_INDEX_INPUT_TO"] = "o valor";
 		Blockly.Msg["LISTS_SET_INDEX_INSERT"] = "insira na posição";
-		Blockly.Msg["LISTS_SET_INDEX_SET"] = "associe à posição";	
+		Blockly.Msg["LISTS_SET_INDEX_SET"] = "associe à posição";
+		Blockly.Msg["LISTS_SORT_ORDER_ASCENDING"] = "crescente";
+		Blockly.Msg["LISTS_SORT_ORDER_DESCENDING"] = "decrescente";
+		Blockly.Msg["LISTS_SORT_TITLE"] = "ordenar a lista em ordem %1 %2 %3";
+		Blockly.Msg["LISTS_SORT_TYPE_IGNORECASE"] = "alfabética (ignorando maiúsculas/minúsculas)";
+		Blockly.Msg["LISTS_SORT_TYPE_NUMERIC"] = "numérica";
+		Blockly.Msg["LISTS_SORT_TYPE_TEXT"] = "alfabética (considerando maiúsculas/minúsculas)";
 		Blockly.Msg["LISTS_SPLIT_LIST_FROM_TEXT"] = "Faça uma lista a partir do texto";
 		Blockly.Msg["LISTS_SPLIT_TEXT_FROM_LIST"] = "Faça um texto a partir da lista";
 		Blockly.Msg["LISTS_SPLIT_WITH_DELIMITER"] = "usando como delimitador";
