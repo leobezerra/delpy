@@ -91,7 +91,7 @@ define(function(require) {
 		Blockly.Msg["LISTS_SET_INDEX_SET"] = "associe à posição";
 		Blockly.Msg["LISTS_SORT_ORDER_ASCENDING"] = "crescente";
 		Blockly.Msg["LISTS_SORT_ORDER_DESCENDING"] = "decrescente";
-		Blockly.Msg["LISTS_SORT_TITLE"] = "copiar em ordem %1 %2 %3";
+		Blockly.Msg["LISTS_SORT_TITLE"] = "copiar em ordem %1 %2 a lista %3";
 		Blockly.Msg["LISTS_SORT_TYPE_IGNORECASE"] = "alfabética (ignorando maiúsculas/minúsculas)";
 		Blockly.Msg["LISTS_SORT_TYPE_NUMERIC"] = "numérica";
 		Blockly.Msg["LISTS_SORT_TYPE_TEXT"] = "alfabética (considerando maiúsculas/minúsculas)";
