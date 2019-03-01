@@ -91,12 +91,12 @@ define(function(require) {
 		Blockly.Msg["LISTS_SET_INDEX_SET"] = "associe à posição";
 		Blockly.Msg["LISTS_SORT_ORDER_ASCENDING"] = "crescente";
 		Blockly.Msg["LISTS_SORT_ORDER_DESCENDING"] = "decrescente";
-		Blockly.Msg["LISTS_SORT_TITLE"] = "copiar em ordem %1 %2 a lista %3";
+		Blockly.Msg["LISTS_SORT_TITLE"] = "copie em ordem %1 %2 a lista %3";
 		Blockly.Msg["LISTS_SORT_TYPE_IGNORECASE"] = "alfabética (ignorando maiúsculas/minúsculas)";
 		Blockly.Msg["LISTS_SORT_TYPE_NUMERIC"] = "numérica";
 		Blockly.Msg["LISTS_SORT_TYPE_TEXT"] = "alfabética (considerando maiúsculas/minúsculas)";
-		Blockly.Msg["LISTS_SPLIT_LIST_FROM_TEXT"] = "Faça uma lista a partir do texto";
-		Blockly.Msg["LISTS_SPLIT_TEXT_FROM_LIST"] = "Faça um texto a partir da lista";
+		Blockly.Msg["LISTS_SPLIT_LIST_FROM_TEXT"] = "faça uma lista a partir do texto";
+		Blockly.Msg["LISTS_SPLIT_TEXT_FROM_LIST"] = "faça um texto a partir da lista";
 		Blockly.Msg["LISTS_SPLIT_WITH_DELIMITER"] = "usando como delimitador";
 		Blockly.Msg["LISTS_REPEAT_TITLE"] = "crie uma lista com %2 repetições do item %1";
 		Blockly.Msg["LOGIC_OPERATION_AND"] = "e";
