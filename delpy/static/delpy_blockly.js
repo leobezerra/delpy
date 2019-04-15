@@ -49,6 +49,7 @@ define(function(require) {
       $(toolbox).append($('<category name="' + cat + '" colour="' + Blockly.Blocks.procedures.HUE + '" custom="DELPY-' + i + '"/>'));
     })
     parameters.toolbox = toolbox;
+	parameters.options.oneBasedIndex = false;
 
     var code = $(workspace).html();
 
